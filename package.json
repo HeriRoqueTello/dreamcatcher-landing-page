@@ -1,0 +1,23 @@
+{
+  "name": "platzitravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwind-scrollbar": "^2.0.1",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "tailwind-forms": "^1.0.6",
+    "tailwind-scrollbar-hide": "^1.1.7"
+  }
+}

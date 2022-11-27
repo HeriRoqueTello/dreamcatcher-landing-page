@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth lg:scroll-pt-14">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4655c70811.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/dreamcatcher-icon.ico" type="image/x-icon" />
+    <title>Dreamcatcher World Tour 2022</title>
+  </head>
+  <body class="font-Montserrat dark:bg-dark scrollbar-thin scrollbar-thumb-custom-cameo overflow-y-scroll">
+    <nav class="w-full h-14 hidden bg-white lg:flex justify-between items-center fixed z-50 shadow-md dark:bg-dark">
+      <div class="h-auto w-auto pl-4">
+        <p class="text-xl text-primary font-black dark:text-[#8D9EFF] select-none">Dreamcatcher</p>
+      </div>
+      <div class="flex space-x-8 text-primary dark:text-white">
+        <a href="#home" class="font-bold text-base">Home</a>
+        <a href="#concerts" class="font-bold text-base">Concerts</a>
+        <a href="#top-shows" class="font-bold text-base">Top Shows</a>
+        <a href="#social" class="font-bold text-base">Social media</a>
+      </div>
+      <div class="flex space-x-8 pr-4 text-primary dark:text-white select-none">
+        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+        <i id="toggleDarkDesktop" class="fa-solid fa-moon text-xl cursor-pointer"></i>
+        <i id="toggleFormDesktop" class="fa-solid fa-user text-xl text-terciary cursor-pointer"></i>
+      </div>
+    </nav>
+    <!-- Form user -->
+    <form
+      id="formUser"
+      onsubmit="event.preventDefault()"
+      class="bg-primary rounded-bl-lg fixed flex-col space-y-4 justify-center items-center flex h-screen w-full p-12 lg:h-auto lg:w-52 lg:p-12 lg:top-14 lg:right-0 z-40 hidden"
+    >
+      <div class="absolute top-8 right-8 lg:hidden">
+        <i id="btnClose" class="fa-solid fa-circle-xmark text-white text-3xl"></i>
+      </div>
+      <div class="lg:w-full lg:h-full h-auto flex justify-center items-center mb-16 select-none">
+        <img class="h-auto w-44" src="./img/dreamcatcherLogo.png" alt="Dreamcatcher logo" />
+      </div>
+      <div class="space-y-2 lg:w-40 flex flex-col">
+        <label for="name" class="select-none text-white text-base">Name</label>
+        <input class="bg-gray-100 p-2 rounded-lg" type="text" placeholder="Nickname" id="name" />
+      </div>
+      <div class="space-y-2 lg:w-40 flex flex-col">
+        <label for="email" class="select-none text-white text-base">Email</label>
+        <input class="bg-gray-100 p-2 rounded-lg" type="email" placeholder="Email" id="email" />
+      </div>
+      <div>
+        <button
+          class="h-12 w-28 rounded-full text-white uppercase bg-secondary shadow-sm transition-all duration-300 hover:bg-indigo-800 hover:w-40 select-none"
+        >
+          Subscribe
+        </button>
+      </div>
+    </form>
+    <section class="w-full h-full">
+      <div class="w-full h-full" id="home">
+        <div class="w-full h-3/4">
+          <div
+            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:justify-start lg:pt-[22rem] lg:pl-8"
+          >
+            <input
+              class="w-56 outline-none p-3 rounded-full shadow-sm text-center transition-all duration-300 focus-within:shadow-sm focus:ring-4 focus:ring-indigo-800 focus:w-10/12 lg:hidden"
+              placeholder="Dreamcatcher"
+              type="search"
+              name=""
+              id=""
+            />
+            <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+              <p class="text-4xl ml-16 font-bold text-white">Dreamcatcher World Tour 2022</p>
+            </div>
+            <button
+              class="w-36 rounded-xl text-lg shadow-sm font-semibold text-primary p-4 bg-white transition duration-300 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16 dark:text-white dark:hover:text-primary dark:bg-primary dark:hover:bg-white"
+            >
+              Explorar
+            </button>
+          </div>
+          <div class="w-full h-full lg:h-screen lg:bg-DreamcatcherDesktop lg:bg-cover">
+            <img class="w-full h-full lg:hidden" src="./img/dreamcatcher.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="p-6" id="concerts">
+        <p class="text-3xl font-semibold text-primary uppercase dark:text-[#CC2D4A]">Concerts</p>
+        <div
+          class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain overflow-y-hidden flex space-x-6 md:scrollbar-thin md:scrollbar-thumb-custom-cameo md:overflow-y-scroll"
+        >
+          <div class="card">
+            <div class="w-full h-3/5 bg-new_york bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">New York</p>
+              <p class="text-md text-center">Palladium Times Square</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-reading bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Reading</p>
+              <p class="text-md text-center">Santander Arena</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-louisville bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Louisville</p>
+              <p class="text-md text-center">Old Forester's Paristown Hall</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-chicago bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Chicago</p>
+              <p class="text-md text-center">Radius Chicago</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-minneapolis bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Minneapolis</p>
+              <p class="text-md text-center">Skyway Theater</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-denver bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Denver</p>
+              <p class="text-md text-center">Fillmore Auditorium</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-san_francisco bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">San Francisco</p>
+              <p class="text-md text-center">The Midway</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-los_angeles bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Los Angeles</p>
+              <p class="text-md text-center">The Wiltern</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-mexico bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Mexico City</p>
+              <p class="text-md text-center">Auditorio BB</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-berlin bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Berlin</p>
+              <p class="text-md text-center">Verti Music Hall</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-tilburg bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Tilburg</p>
+              <p class="text-md text-center">013</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-warsaw bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Warsaw</p>
+              <p class="text-md text-center">Palladium</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-london bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">London</p>
+              <p class="text-md text-center">O2 Academy Brixton</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="w-full h-3/5 bg-paris bg-cover"></div>
+            <div class="card-details">
+              <p class="font-bold text-lg">Paris</p>
+              <p class="text-md text-center">Le Zénith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-6 pt-4 h-full w-full" id="top-shows">
+        <p class="text-3xl text-primary font-semibold pb-6 uppercase dark:text-[#CC2D4A]">Top Shows</p>
+        <div class="w-full h-full flex flex-col space-y-6 justify-center items-center">
+          <div class="w-full h-96 bg-ny_concert bg-cover rounded-xl md:bg-fixed">
+            <p class="card-title">New York</p>
+            <p class="text-sm pl-8 text-white mr-24 md:text-base">US tour with sold-out</p>
+          </div>
+          <div class="lg:h-full grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-4 lg:w-full lg:p-6">
+            <div class="w-full h-96 bg-fr_concert bg-cover rounded-xl md:bg-content lg:h-auto lg:row-span-2">
+              <p class="card-title">Paris</p>
+              <p class="text-sm ml-8 text-white mr-24 w-3/5 md:text-base">
+                First Girl Group in K-Pop History to hold a Solo Concert in France
+              </p>
+            </div>
+            <div class="w-full h-96 bg-mx_concert bg-cover rounded-xl md:bg-content">
+              <p class="card-title">Mexico City</p>
+              <p class="text-sm pl-8 text-white mr-24 md:text-base">It is the first time that Dreamcatcher will come to Mexico</p>
+            </div>
+            <div class="w-full h-96 bg-gr_concert bg-cover rounded-xl md:bg-content lg:h-auto lg:row-span-2">
+              <p class="card-title">Berlin</p>
+              <p class="text-sm pl-8 text-white mr-24 md:text-base">
+                Dreamcatcher begins Europe tour for the first time in 3 years, starting with Germany
+              </p>
+            </div>
+            <div class="w-full h-96 bg-br_concert bg-cover rounded-xl md:bg-content">
+              <p class="card-title">Tilburg</p>
+              <p class="text-md pl-8 text-white mr-24">First time in Tilburg city</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-full" id="faqs">
+        <div class="w-full h-full px-6 flex flex-col space-y-4">
+          <p class="text-3xl text-primary font-semibold mt-6 text-center dark:text-[#CC2D4A]">FAQ</p>
+          <div>
+            <p class="text-xl font-medium text-primary dark:text-terciary">Information</p>
+            <p class="text-base pt-2 dark:text-white">
+              The information on the website is taken from the internet, which may not be accurate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="social" class="w-full h-auto bg-gray-50 p-6 space-y-3 mt-4 mb-16 md:mb-0 dark:bg-[#040303]">
+      <p class="text-lg md:text-center dark:text-primary">Social media</p>
+      <div class="flex flex-row space-x-6 justify-center text-terciary">
+        <p class="text-xl">
+          <a href="https://twitter.com/hf_dreamcatcher" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </p>
+        <p class="text-xl">
+          <a href="https://www.youtube.com/channel/UCijULR2sXLutCRBtW3_WEfA" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </p>
+        <p class="text-xl">
+          <a href="https://open.spotify.com/artist/5V1qsQHdXNm4ZEZHWvFnqQ?si=7Y4yeEgkTjaITbBzQBSmZw" target="_blank"
+            ><i class="fa-brands fa-spotify"></i
+          ></a>
+        </p>
+        <p class="text-xl">
+          <a href="https://www.tiktok.com/@official_dreamcatcher" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </p>
+        <p class="text-xl">
+          <a href="https://www.instagram.com/hf_dreamcatcher/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </p>
+        <p class="text-xl">
+          <a href="https://dreamcatcher.fandom.com/" target="_blank"><i class="fa-brands fa-wikipedia-w"></i></a>
+        </p>
+      </div>
+    </footer>
+    <div
+      class="w-full h-16 border-t-2 border-solid border-primary bg-white fixed left-0 bottom-0 space-x-6 flex items-center justify-center lg:hidden dark:bg-dark dark:border-secondary z-50"
+      id="tab_bar"
+    >
+      <a href="#home">
+        <i class="fa-solid fa-house text-2xl text-gray-300"></i>
+      </a>
+      <a href="#concerts">
+        <i class="fa-solid fa-magnifying-glass text-2xl text-gray-300"></i>
+      </a>
+      <a href="#top-shows">
+        <i class="fa-solid fa-heart text-2xl text-primary"></i>
+      </a>
+      <button id="toggleDarkMobile">
+        <i id="iconDarkMobile" class="fa-solid fa-moon text-2xl text-gray-300"></i>
+      </button>
+      <button id="toggleFormMobile">
+        <i class="fa-solid fa-user text-2xl text-gray-300"></i>
+      </button>
+    </div>
+    <script></script>
+    <script src="../src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply w-48 h-56 select-none shadow-md rounded-lg flex-none overflow-hidden transform transition-all hover:-translate-y-4 hover:shadow-xl;
+}
+.card:nth-child(even) {
+  @apply bg-white text-primary dark:bg-primary dark:text-white;
+}
+.card:nth-child(odd) {
+  @apply bg-secondary text-white dark:bg-[#950101] dark:text-white;
+}
+.card-details {
+  @apply w-full h-2/5 flex flex-col items-center pt-2;
+}
+.card-title {
+  @apply text-2xl px-8 pt-8 pb-2 font-semibold text-white;
+}
